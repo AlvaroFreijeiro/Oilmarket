@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>OilMarket</title>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/verificar_sesion.js"></script>
+    <script src="js/cargar_productos.js"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-dark bg-success">
+        <a class="navbar-brand" href="#">OilMarket</a>
+        <div id="mensajeSesion"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+                <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-4">
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="display-4">Bienvenido a OilMarket</h1>
+            <p class="lead">Tu destino para encontrar los mejores productos de aceite de oliva.</p>
+            <hr class="my-4">
+            <p>Descubre nuestras ofertas especiales y productos destacados.</p>
+            <a class="btn btn-success btn-lg" href="#" role="button">Explorar Productos</a>
+        </div>
+
+   
+
+        <!-- Sección de Destacados -->
+        <h2 class="text-success mb-4">Productos Destacados</h2>
+        <!-- Puedes agregar tarjetas de productos destacados aquí -->
+
+        <!-- Tabla de Productos -->
+        <h2 class="text-success my-4">Todos los Productos</h2>
+        <div class="table-responsive">
+            <table id="tabla-productos" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <!--<th scope="col">#</th> -->
+                        <th scope="col">Nombre del Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white mt-4 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="text-white">Acerca de Nosotros</a>
+                    <a href="#" class="text-white ml-3">Términos y Condiciones</a>
+                    <a href="#" class="text-white ml-3">Política de Privacidad</a>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p>&copy; 2023 OilMarket. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

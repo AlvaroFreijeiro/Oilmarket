@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+nav {
+    background-color: #4CAF50; /* Verde - asociado con lo natural y saludable */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mensajeSesion {
+    margin-right: 20px; /* Margen derecho para separar el texto del resto de elementos en la barra de navegación */
+    font-weight: bold; /* Texto en negrita para resaltar */
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #333; /* Gris oscuro - contraste con el fondo verde de la barra de navegación */
+    color: white;
+    cursor: pointer;
+}
+
+.featured-section, .categories-section {
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-links a {
+    color: #4CAF50; /* Verde - se mantiene la consistencia con la barra de navegación */
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
